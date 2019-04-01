@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+#vscode settings
+.vscode/
+
+node.exe
+node_etw_provider.man
+node_perfctr_provider.man
+nodevars.bat
+npm
+npm.cmd
+npx
+npx.cmd
