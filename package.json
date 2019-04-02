@@ -1,0 +1,33 @@
+{
+  "name": "dissertation",
+  "version": "1.0.0",
+  "description": "diss\r ch-ch-ch-changesssssssssssssss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --content-base dist --hot --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finHards/dissertation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finHards/dissertation/issues"
+  },
+  "homepage": "https://github.com/finHards/dissertation#readme",
+  "dependencies": {
+    "chart.js": "^2.8.0"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "keywords": []
+}
