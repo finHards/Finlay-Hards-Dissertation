@@ -4,12 +4,8 @@
   "description": "diss\r ch-ch-ch-changesssssssssssssss",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --content-base dist --hot --inline --hot"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 69ff38e3a18c4e02f1c11647e17cf74369af4804
   },
   "repository": {
     "type": "git",
@@ -24,7 +20,6 @@
   "dependencies": {
     "chart.js": "^2.8.0"
   },
-<<<<<<< HEAD
   "devDependencies": {
     "css-loader": "^2.1.1",
     "node-sass": "^4.11.0",
@@ -34,8 +29,5 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
-=======
-  "devDependencies": {},
->>>>>>> 69ff38e3a18c4e02f1c11647e17cf74369af4804
   "keywords": []
 }
