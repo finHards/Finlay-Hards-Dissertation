@@ -1,0 +1,33 @@
+body{
+    background: $background-blue;
+    margin: 0px;
+    color: $primary-white;
+    font-family: $roboto;
+}
+
+
+#siteDescription{
+
+    background: $secondary-blue;
+    padding: 5px;
+    text-align: center;
+}
+
+#mainButton{
+    
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+    line-height: 70px;
+    background-color: $button-orange;
+    box-shadow: 0px 4px 4px #7D7D7D;
+    border-radius: 40px;
+    color: $primary-white;
+    font-size: 24px;
+}
+
+
+
