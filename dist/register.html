@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Finlay Hards Dissertation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <nav>
+            <div id="burgernav">
+                <button id="dropbutton">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </button>      
+            </div>
+            <h1>Register</h1>
+        </nav>
+
+        <div class="dropdowncontent" id="dropdown">
+            <a href="index.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="register.html">Register</a>
+        </div>
+
+        <form name="registerForm" onsubmit="SOMETHINGHERE" method="POST" id="registerForm">
+            <div id="formContainer">
+                Email Address
+                <input type="text" placeholder="Enter Email" name="email" class="inputBoxes">
+                Password
+                <input type="password" placeholder="Enter Password" name="password" class="inputBoxes">
+                Confirm Password
+                <input type="password" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes">
+
+                <button type="submit" class="mainButton">Register</button>
+
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </div>
+            
+            
+        </form>
+
+        
+
+    </body>
+
+    <script src="bundle.js"></script>
+</html>
