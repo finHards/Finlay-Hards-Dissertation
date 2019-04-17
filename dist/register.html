@@ -2,6 +2,7 @@
     <head>
         <title>Finlay Hards Dissertation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
     </head>
 
     <body>
@@ -18,26 +19,28 @@
 
         <div class="dropdowncontent" id="dropdown">
             <a href="index.html">Home</a>
-            <a href="login.html">Log In</a>
             <a href="register.html">Register</a>
+            <a href="login.html">Log In</a>
         </div>
 
-        <form name="registerForm" onsubmit="SOMETHINGHERE" method="POST" id="registerForm">
+        <form name="registerForm" id="registerForm">
             <div id="formContainer">
                 Email Address
-                <input type="text" placeholder="Enter Email" name="email" class="inputBoxes">
+                <input type="text" id="txtEmail" placeholder="Enter Email" name="email" class="inputBoxes" required="required">
                 Password
-                <input type="password" placeholder="Enter Password" name="password" class="inputBoxes">
+                <input type="password" id="txtPassword" placeholder="Enter Password" name="password" class="inputBoxes" required="required">
                 Confirm Password
-                <input type="password" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes">
+                <input type="password" id ="txtConfirmPassword" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes" required="required">
 
-                <button type="submit" class="mainButton">Register</button>
+                <button class="mainButton" id="registerButton">Register</button>
 
                 <p>Already have an account? <a href="login.html">Sign In</a></p>
             </div>
             
             
         </form>
+
+        
 
         
 

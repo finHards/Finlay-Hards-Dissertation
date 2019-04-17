@@ -3,8 +3,6 @@
 var dropDownMenu = document.getElementById('dropbutton');
 
 var burgerBars = document.getElementsByClassName("bar");
-console.log(burgerBars);
-
 
 dropDownMenu.addEventListener('click', function(x){
 
