@@ -5,6 +5,8 @@ body{
     font-family: $roboto;
 }
 
+
+
 p {
     text-align: center;
     color: $primary-white;
@@ -23,6 +25,11 @@ p {
     padding: 5px;
     text-align: center;
     color: $primary-white;
+
+    h2{
+        margin-top: 0;
+    }
+
 }
 
 .mainButton{
@@ -62,12 +69,22 @@ p {
 }
 
 #formContainer{
-    
+    margin: auto;
     margin-top: 5vh;
     background-color: $secondary-blue;
     border-radius: 15px;
     padding-top: 10px;
     padding-bottom: 5px;
+
+}
+
+#helpText{
+    position: fixed;
+    bottom: 0;
+    background: $secondary-blue;
+    width: 100%;
+    margin: auto;
+    line-height: 10vh;
 }
 
 .inputBoxes{
@@ -88,7 +105,62 @@ p {
     &::placeholder{
         color: $primary-purple;
     }
-    // &:focus{
-    //     background-color: $secondary-white;
-    // }
+    
+}
+
+#profileButtonContainer{
+    margin-top: 8vh;
+    
+}
+
+.profileButtons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+    line-height: 65px;
+    height: 65px;
+    text-decoration: none;
+    color: $primary-white;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+
+
+    &:first-of-type{
+        margin-bottom: 5vh;
+    }
+
+    &:nth-of-type(2){
+        margin-bottom: 5vh;
+    }
+
+    &.buttonPurple1{
+        background: $primary-purple;
+        
+        img{
+            width: 48px;
+        }
+        
+    }
+    &.buttonPurple2{
+        background: $secondary-purple;
+        text-align: right;
+
+        img{
+            width: 48px;
+        }
+    }
+    &.buttonPurple3{
+        background: $third-purple;
+
+        img{
+            width: 48px;
+        }
+    }
+
+    &:visited{
+        color: $primary-white;
+    }
 }
