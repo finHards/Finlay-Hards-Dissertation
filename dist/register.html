@@ -23,20 +23,19 @@
             <a href="login.html">Log In</a>
         </div>
 
-        <form name="registerForm" id="registerForm">
+        <form name="registerForm" class="registerForm">
             <div id="formContainer">
                 Email Address
-                <input type="text" id="txtEmail" placeholder="Enter Email" name="email" class="inputBoxes" required="required">
+                <input type="text" id="txtEmail" placeholder="Enter Email" name="email" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Email'">
                 Password
-                <input type="password" id="txtPassword" placeholder="Enter Password" name="password" class="inputBoxes" required="required">
+                <input type="password" id="txtPassword" placeholder="Enter Password" name="password" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Password'">
                 Confirm Password
-                <input type="password" id ="txtConfirmPassword" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes" required="required">
+                <input type="password" id ="txtConfirmPassword" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Repeat Password'">
 
                 <button class="mainButton" id="registerButton">Register</button>
 
                 <p>Already have an account? <a href="login.html">Sign In</a></p>
             </div>
-            
             
         </form>
 

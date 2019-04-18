@@ -39,31 +39,8 @@ document.getElementById("registerButton").onclick=function(){
     hr.send(users);
 
     window.location.href = "./registrationSuccess.html"
-    //console.log("got to the end");
+    
 }
-
-//Event handler for registration form submit 
-// $('#registerForm').submit(function(event){
-// 	formData = $('#registerForm').serialize();
-//     // cancels the form submission
-//     event.preventDefault();
-
-// 	$.ajax({
-// 		type: "POST",
-// 		url: "/includes/registrationDAO.php",
-// 		data: formData+"&phpfunction=createUser",
-// 	    success: function(echoedMsg){ 
-// 			if(echoedMsg=='true')    {
-// 				window.location="registrationSuccess.html";
-// 			} else {
-// 				$("#divMessage").html(echoedMsg);
-// 			}
-// 	    },
-// 		error: function(msg){ 
-// 			console.log(msg);
-// 	    }
-// 	});
-// });
 
 
 

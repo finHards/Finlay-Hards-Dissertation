@@ -2,6 +2,7 @@
     <head>
         <title>Finlay Hards Dissertation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
     </head>
 
     <body>
@@ -22,19 +23,20 @@
             <a href="login.html">Log In</a>
         </div>
 
-        <form name="loginForm" onsubmit="login" method="post" id="registerForm">
+        <form name="loginForm" class="registerForm">
             <div id="formContainer">
                 Email Address
-                <input type="text" placeholder="Enter Email" name="email" class="inputBoxes">
+                <input type="text" id="txtEmail1" placeholder="Enter Email" name="email" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Email'">
                 Password
-                <input type="password" placeholder="Enter Password" name="password" class="inputBoxes">
+                <input type="password" id="txtPassword1" placeholder="Enter Password" name="password" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Password'">
 
-                <button type="submit" class="mainButton">Log In</button>
+                <button class="mainButton" id="loginButton">Log In</button>
 
                 <p>Dont have an account? <a href="register.html">Register Here</a></p>
             </div>
         </form>
 
+        <div id="errorbox"></div>
         
 
     </body>
