@@ -1,21 +1,13 @@
 <?php
-
-
     session_start();
 
     if($_POST['phpfunction'] == 'checkLogin') {
-
         checkLogin();
-
     } else if($_POST['phpfunction'] == 'loginUser'){
-
         loginUser();
-
     }
 
     function loginUser(){
-
-
         include "config.php";
 
         $email = $_POST['email'];
@@ -23,10 +15,8 @@
 
 
         $sql = "SELECT password FROM users WHERE email='$email'";
-
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
         
-        $count = mysqli_num_rows($result);
         $hashedPassword = mysql_fetch_object($result);
 
         while($row = mysqli_fetch_array($result)){
@@ -37,10 +27,10 @@
 
                 $_SESSION['loginUser'] = $email;
 
-                echo("http://ct6042-hards.studentsites.glos.ac.uk/profile.html");
+                echo("https://ct6042-hards.studentsites.glos.ac.uk/profile.html");
                 
             }else{
-                echo ("email or password does not match");
+                echo("email or password does not match");
             }
 
         }

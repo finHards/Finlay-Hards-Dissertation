@@ -32,9 +32,11 @@
                 Confirm Password
                 <input type="password" id ="txtConfirmPassword" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Repeat Password'">
 
-                <button class="mainButton" id="registerButton">Register</button>
+                <button onclick="register()" type="submit" class="mainButton" id="registerButton">register</button>
 
                 <p>Already have an account? <a href="login.html">Sign In</a></p>
+
+                <div id="errorbox"></div>
             </div>
             
         </form>

@@ -30,7 +30,7 @@
                 Password
                 <input type="password" id="txtPassword1" placeholder="Enter Password" name="password" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Password'">
 
-                <button class="mainButton" id="loginButton">Log In</button>
+                <button onclick="LogIn()" type="submit" class="mainButton" id="loginButton">Log In</button>
 
                 <p>Dont have an account? <a href="register.html">Register Here</a></p>
             </div>
