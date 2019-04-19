@@ -5,7 +5,6 @@
 
 
 
-
 // function validatePassword(password, confirmPassword){
 //   if(password.value != confirmPassword.value) {
 //     confirmPassword.setCustomValidity("Passwords Don't Match");

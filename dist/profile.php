@@ -1,3 +1,18 @@
+<?php
+    //include('includes/session.php');
+    // require('includes/config.php');
+
+    session_start();
+
+    if(!isset($_SESSION['loginUser'])){
+        //mysql_close($connection);
+        header('Location: login.php');
+        //exit();
+    }
+    
+?>
+
+
 <html>
     <head>
         <title>Finlay Hards Dissertation</title>

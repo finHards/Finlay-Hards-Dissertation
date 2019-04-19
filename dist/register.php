@@ -19,8 +19,8 @@
 
         <div class="dropdowncontent" id="dropdown">
             <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Log In</a>
+            <a href="register.php">Register</a>
+            <a href="login.php">Log In</a>
         </div>
 
         <form name="registerForm" class="registerForm">

@@ -27,7 +27,8 @@
 
                 $_SESSION['loginUser'] = $email;
 
-                echo("https://ct6042-hards.studentsites.glos.ac.uk/profile.html");
+
+                echo("https://ct6042-hards.studentsites.glos.ac.uk/profile.php");
                 
             }else{
                 echo("email or password does not match");

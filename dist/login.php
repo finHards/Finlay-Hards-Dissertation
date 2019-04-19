@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    //$login = true;
+    // require('includes/session.php');
+
+    if(isset($_SESSION['loginUser'])){
+        //mysql_close($connection);
+        header('Location: profile.php');
+        //exit();
+    }
+
+?>
+
 <html>
     <head>
         <title>Finlay Hards Dissertation</title>
@@ -19,8 +32,8 @@
 
         <div class="dropdowncontent" id="dropdown">
             <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Log In</a>
+            <a href="register.php">Register</a>
+            <a href="login.php">Log In</a>
         </div>
 
         <form name="loginForm" class="registerForm">
