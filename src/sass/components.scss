@@ -166,3 +166,93 @@ p {
         color: $primary-white;
     }
 }
+
+#moodContainer{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.moodButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    border: none;
+    height: 75px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+
+    &:focus{
+        border: $primary-white;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    
+    img{
+        margin: auto;
+        height: 50px;
+    }
+    
+    &.button1{
+        background: $very-happy;
+        
+    }
+
+    &.button2{
+        background: $happy;
+        
+    }
+
+    &.button3{
+        background: $upbeat;
+        
+    }
+
+    &.button4{
+        background: $ok;
+       
+    }
+
+    &.button5{
+        background: $other;
+        
+    }
+
+    &.button6{
+        background: $anxious;
+    }
+
+    &.button7{
+        background: $unhappy;
+        margin-bottom: 10px;
+    }
+
+    &.button8{
+        background: $sad;
+        margin-bottom: 10px;
+    }
+
+    &.button9{
+        background: $very-sad;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+textarea{
+    width: 90%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}

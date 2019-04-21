@@ -52,7 +52,6 @@
             <a href="" class="profileButtons buttonPurple3">Tracker <img src="images/tracker.svg"></a>
         </div>
 
-        
         <p id="helpText">Need some support?<a href=""> Click Here</a></p>
         
         
