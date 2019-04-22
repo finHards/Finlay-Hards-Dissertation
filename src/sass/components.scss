@@ -173,33 +173,25 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10vh;
-    justify-content: center;
     text-align: center;
+    justify-content: space-between;
 }
 
 .moodButtons{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: auto;
     width: 30%;
-    border: none;
     height: 75px;
     margin-bottom: 5px;
     font-weight: bold;
-    padding: 5px;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.10s ease-in;
 
-    &:focus{
-        border: $primary-white;
-        border-style: solid;
-        border-width: 2px;
-    }
-
-    
     img{
         margin: auto;
-        height: 50px;
+        height: 40px;
     }
     
     &.button1{
@@ -246,7 +238,6 @@ p {
         margin-bottom: 10px;
     }
 
-
 }
 
 textarea{
@@ -255,4 +246,28 @@ textarea{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+}
+input[type=radio]{
+    display: none;
+}
+
+
+input[type=radio]:checked+label{
+
+    border: 3px solid $primary-white;
+    
+
+}
+
+#calender{
+    background: $primary-white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    div{
+        outline: 1px solid $button-orange;
+        padding: 5px;
+    }
+
 }

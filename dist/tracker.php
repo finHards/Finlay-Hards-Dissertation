@@ -10,6 +10,7 @@
 
 
 <html>
+
     <head>
         <title>Finlay Hards Dissertation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,33 +27,37 @@
                 
             </div>
     
-            <h1>Send Moods</h1>
-            
+            <h1>Tracker</h1>
+                
         </nav>
-    
+        
         <div class="dropdowncontent" id="dropdown">
-            <a href="diary.php">Diary</a>
+            <a href="profile.php">Profile</a>
             <a href="">Goals</a>
             <a href="">Information</a>
             <a href="logout.php">log out</a>
         </div>
+
+
+
+
+        <div id="month"></div>
+        <div id="calender">
+
+            <div> Mon </div>
+            <div> Tue </div>
+            <div> Wed </div>
+            <div> Thu </div>
+            <div> Fri </div>
+            <div> Sat </div>
+            <div> Sun </div>
         
-        <div id="siteDescription">
-            <h2>Welcome</h2>
-            Score: 0000
-        </div>
-        
-        <div id="profileButtonContainer">
-            <a href="diary.php" class="profileButtons buttonPurple1">Daily Diary <img src="images/diary.svg"></a>   
-            <a href="" class="profileButtons buttonPurple2"><img src="images/goals.svg">Goals</a>
-            <a href="tracker.php" class="profileButtons buttonPurple3">Tracker <img src="images/tracker.svg"></a>
         </div>
 
-        <p id="helpText">Need some support?<a href=""> Click Here</a></p>
-        
-        
+
+        <button class="mainButton" onclick="updateCalendar()">update</button>
     </body>
 
-
     <script src="bundle.js"></script>
+
 </html>

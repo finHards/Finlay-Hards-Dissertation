@@ -2,7 +2,6 @@
 
 window.LogIn = function(){  
 
-    console.log("it got to the start of login");
 
     event.preventDefault();
       

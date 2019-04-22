@@ -1,17 +1,4 @@
-//Password Validate
-//The following lines of code checks whether
-//or not user entered the same password in both
-//paasword and confirm password textbox
 
-
-
-// function validatePassword(password, confirmPassword){
-//   if(password.value != confirmPassword.value) {
-//     confirmPassword.setCustomValidity("Passwords Don't Match");
-//   } else {
-//     confirmPassword.setCustomValidity('');
-//   }
-// }
 
 
 
@@ -19,18 +6,11 @@ window.register = function(){
 
     event.preventDefault();
 
-    console.log("got here");
-
 
     var password = document.getElementById("txtPassword");
     var confirmPassword = document.getElementById("txtConfirmPassword");
     var email = document.getElementById("txtEmail");
 
-    // if(password.value != confirmPassword.value) {
-    //   confirmPassword.setCustomValidity("Passwords Don't Match");
-    // } else {
-    //   confirmPassword.setCustomValidity('Password valid');
-    // }
 
     if((password.value == confirmPassword.value) && (email.value != "") && (password.value != "") && (confirmPassword.value != "")) {
 
