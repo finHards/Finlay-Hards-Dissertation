@@ -5,7 +5,7 @@
 
     $email = $_SESSION['loginUser'];
     
-    $sql="SELECT mood, dateUploaded FROM moods WHERE email='$email'";
+    $sql="SELECT mood, dateUploaded, text FROM moods WHERE email='$email'";
 
     $result = mysqli_query($connection, $sql);
     $rows = array();

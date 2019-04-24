@@ -5,7 +5,6 @@
         submitDiary();
     }
 
-
     function submitDiary(){
         include "config.php";
 
@@ -19,13 +18,13 @@
 
         if(mysqli_num_rows($query) > 0){
 
-			echo ("You can only submit one a day");
+			echo ("Currently you can only submit one diary submission a day");
 			
 		}else{
 
-            $sql="INSERT into moods (email, mood, text, date) values ('$email', '$mood', '$text', '$date')";
+            $sql="INSERT into moods (email, mood, text, dateUploaded) values ('$email', '$mood', '$text', '$date')";
             $query = mysqli_query($connection, $sql);
-
+            echo("Your diary submission was successful");
         }
     }
 

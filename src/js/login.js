@@ -20,8 +20,10 @@ window.LogIn = function(){
         var return_data = hr.responseText;
 
         if(return_data != "email or password does not match"){
+            event.preventDefault();
             window.location.assign(return_data);
         } else{
+            event.preventDefault();
             document.getElementById("errorbox").innerHTML = return_data;
         }
 

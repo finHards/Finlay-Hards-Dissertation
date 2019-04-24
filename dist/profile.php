@@ -33,11 +33,11 @@
         <div class="dropdowncontent" id="dropdown">
             <a href="diary.php">Diary</a>
             <a href="">Goals</a>
-            <a href="">Information</a>
+            <a href="tracker.php">Tracker</a>
             <a href="logout.php">log out</a>
         </div>
         
-        <div id="siteDescription">
+        <div class="siteDescription">
             <h2>Welcome</h2>
             Score: 0000
         </div>

@@ -14,6 +14,21 @@ window.enterMood = function(){
     hr.open("POST", url, true);
     hr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 
+    hr.onreadystatechange = function(){
+
+        var returnData = hr.responseText;
+
+        if(returnData == "Currently you can only submit one diary submission a day"){
+            document.getElementById("errorbox").innerHTML = returnData;
+        } else {
+            document.getElementById("errorbox").innterHTML = returnData;
+        }
+    }
+
+
     hr.send(moodInfo);
+
+
+
 
 }

@@ -1,12 +1,8 @@
 <?php
     session_start();
-    //$login = true;
-    // require('includes/session.php');
 
     if(isset($_SESSION['loginUser'])){
-        //mysql_close($connection);
         header('Location: profile.php');
-        //exit();
     }
 
 ?>
@@ -36,22 +32,21 @@
             <a href="login.php">Log In</a>
         </div>
 
-        <form name="loginForm" class="registerForm">
+        <div class="registerForm">
             <div id="formContainer">
                 Email Address
                 <input type="text" id="txtEmail1" placeholder="Enter Email" name="email" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Email'">
                 Password
                 <input type="password" id="txtPassword1" placeholder="Enter Password" name="password" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Password'">
 
-                <button onclick="LogIn()" type="submit" class="mainButton" id="loginButton">Log In</button>
+                <button class="mainButton" id="loginButton" onclick="LogIn()">Log In</button>
 
-                <p>Dont have an account? <a href="register.html">Register Here</a></p>
+                <p>Dont have an account? <a href="register.php">Register Here</a></p>
+
+                <div id="errorbox"></div>
             </div>
-        </form>
-
-        <div id="errorbox"></div>
-        
-
+            
+        </div>
     </body>
 
     <script src="bundle.js"></script>

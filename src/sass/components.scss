@@ -6,6 +6,9 @@ body{
     margin-bottom: 70px;
 }
 
+h2{
+    text-align: center;
+}
 
 
 p {
@@ -20,17 +23,34 @@ p {
     }
 }
 
-#siteDescription{
+.siteDescription{
 
     background: $secondary-blue;
     padding: 5px;
     text-align: center;
     color: $primary-white;
 
-    h2{
+    // h2{
+    //     margin-top: 0;
+    // }
+
+}
+
+#trackerInformation{
+    margin-bottom: 20px;
+
+    h3{
         margin-top: 0;
     }
+    p{
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
 
+
+hr{
+    border-color: $primary-white;
 }
 
 .mainButton{
@@ -193,52 +213,64 @@ p {
         margin: auto;
         height: 40px;
     }
-    
-    &.button1{
-        background: $very-happy;
-        
-    }
-
-    &.button2{
-        background: $happy;
-        
-    }
-
-    &.button3{
-        background: $upbeat;
-        
-    }
-
-    &.button4{
-        background: $ok;
-       
-    }
-
-    &.button5{
-        background: $other;
-        
-    }
-
-    &.button6{
-        background: $anxious;
-    }
 
     &.button7{
-        background: $unhappy;
         margin-bottom: 10px;
     }
 
     &.button8{
-        background: $sad;
         margin-bottom: 10px;
     }
 
     &.button9{
-        background: $very-sad;
         margin-bottom: 10px;
     }
 
 }
+
+.button1{
+    background: $very-happy;
+    
+}
+
+.button2{
+    background: $happy;
+    
+}
+
+.button3{
+    background: $upbeat;
+    
+}
+
+.button4{
+    background: $ok;
+   
+}
+
+.button5{
+    background: $other;
+    
+}
+
+.button6{
+    background: $anxious;
+}
+
+.button7{
+    background: $unhappy;
+}
+
+.button8{
+    background: $sad;
+}
+
+.button9{
+    background: $very-sad;
+}
+
+
+
 
 textarea{
     width: 90%;
@@ -270,4 +302,21 @@ input[type=radio]:checked+label{
         padding: 5px;
     }
 
+}
+
+select{
+    border: none;
+    font-size: 24px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#monthListContainer{
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#month{
+    font-size: 30px;
+    text-align: center;
 }
