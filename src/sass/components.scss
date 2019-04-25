@@ -30,10 +30,6 @@ p {
     text-align: center;
     color: $primary-white;
 
-    // h2{
-    //     margin-top: 0;
-    // }
-
 }
 
 #trackerInformation{
@@ -208,7 +204,7 @@ hr{
     font-weight: bold;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.10s ease-in;
-
+    border-radius: 10px;
     img{
         margin: auto;
         height: 40px;
@@ -278,6 +274,13 @@ textarea{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    font-size: 15px;
+    color: $primary-purple;
+    font-weight: bold;
+    &::placeholder{
+        color: $primary-purple;
+        
+    }
 }
 input[type=radio]{
     display: none;
@@ -308,6 +311,8 @@ select{
     border: none;
     font-size: 24px;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+    color: $primary-purple;
+    font-weight: bold;
 }
 
 #monthListContainer{
@@ -319,4 +324,27 @@ select{
 #month{
     font-size: 30px;
     text-align: center;
+}
+
+#goalListDropdown{
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#goalSubmitButton{
+    margin-top: 10px;
+}
+
+#goalTableContainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(5, 1fr);
+
+    div{
+        outline: 1px solid $button-orange;
+        padding: 5px;
+    }
+
 }

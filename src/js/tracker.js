@@ -80,7 +80,7 @@ window.updateCalendar = function(month){
 
     var hr = new XMLHttpRequest();
     var url = "/includes/trackerDAO.php";
-    var getData = "phpfunction=getCalendarData";
+    
 
     hr.open("GET", url, true);
     hr.setRequestHeader("content-type", "application/json");

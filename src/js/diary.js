@@ -21,7 +21,7 @@ window.enterMood = function(){
         if(returnData == "Currently you can only submit one diary submission a day"){
             document.getElementById("errorbox").innerHTML = returnData;
         } else {
-            document.getElementById("errorbox").innterHTML = returnData;
+            document.getElementById("errorbox").innterHTML = "Your diary submission was successful! Visit the tracker to see your diary progress";
         }
     }
 

@@ -43,6 +43,7 @@
 
                 <p>Dont have an account? <a href="register.php">Register Here</a></p>
 
+                
                 <div id="errorbox"></div>
             </div>
             

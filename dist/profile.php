@@ -26,25 +26,25 @@
                 
             </div>
     
-            <h1>Send Moods</h1>
+            <h1>Clarity</h1>
             
         </nav>
     
         <div class="dropdowncontent" id="dropdown">
             <a href="diary.php">Diary</a>
-            <a href="">Goals</a>
+            <a href="goals.php">Goals</a>
             <a href="tracker.php">Tracker</a>
             <a href="logout.php">log out</a>
         </div>
         
         <div class="siteDescription">
             <h2>Welcome</h2>
-            Score: 0000
+            
         </div>
         
         <div id="profileButtonContainer">
             <a href="diary.php" class="profileButtons buttonPurple1">Daily Diary <img src="images/diary.svg"></a>   
-            <a href="" class="profileButtons buttonPurple2"><img src="images/goals.svg">Goals</a>
+            <a href="goals.php" class="profileButtons buttonPurple2"><img src="images/goals.svg">Goals</a>
             <a href="tracker.php" class="profileButtons buttonPurple3">Tracker <img src="images/tracker.svg"></a>
         </div>
 

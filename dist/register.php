@@ -35,7 +35,6 @@
                 <button onclick="register()" type="submit" class="mainButton" id="registerButton">register</button>
 
                 <p>Already have an account? <a href="login.html">Sign In</a></p>
-
                 <div id="errorbox"></div>
             </div>
             
