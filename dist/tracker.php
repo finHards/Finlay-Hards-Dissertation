@@ -33,8 +33,10 @@
         
         <div class="dropdowncontent" id="dropdown">
             <a href="profile.php">Profile</a>
+            <a href="diary.php">Diary</a>
             <a href="goals.php">Goals</a>
             <a href="tracker.php">Tracker</a>
+            <a href="supportInfo.php">Information</a>
             <a href="logout.php">log out</a>
         </div>
 

@@ -14,8 +14,8 @@ h2{
 p {
     text-align: center;
     color: $primary-white;
-    font-size: 20px;
-    font-weight: bold;
+    // font-size: 20px;
+    // font-weight: bold;
     a{
         color: $button-orange;
         text-decoration: none;
@@ -103,6 +103,7 @@ hr{
     margin: auto;
     line-height: 10vh;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .inputBoxes{
@@ -188,7 +189,7 @@ hr{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-align: center;
     justify-content: space-between;
 }
@@ -327,7 +328,7 @@ select{
 }
 
 #goalListDropdown{
-
+    width: 90%;
     margin-top: 15px;
     margin-bottom: 10px;
 }

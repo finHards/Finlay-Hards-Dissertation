@@ -34,12 +34,12 @@
             <a href="diary.php">Diary</a>
             <a href="goals.php">Goals</a>
             <a href="tracker.php">Tracker</a>
+            <a href="supportInfo.php">Information</a>
             <a href="logout.php">log out</a>
         </div>
         
         <div class="siteDescription">
             <h2>Welcome</h2>
-            
         </div>
         
         <div id="profileButtonContainer">
@@ -48,7 +48,7 @@
             <a href="tracker.php" class="profileButtons buttonPurple3">Tracker <img src="images/tracker.svg"></a>
         </div>
 
-        <p id="helpText">Need some support?<a href=""> Click Here</a></p>
+        <p id="helpText">Need some help?<a href="supportInfo.php"> Click Here</a></p>
         
         
     </body>

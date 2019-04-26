@@ -32,12 +32,18 @@
     
         <div class="dropdowncontent" id="dropdown">
             <a href="profile.php">Profile</a>
+            <a href="diary.php">Diary</a>
             <a href="goals.php">Goals</a>
             <a href="tracker.php">Tracker</a>
+            <a href="supportInfo.php">Information</a>
             <a href="logout.php">log out</a>
         </div>
 
-        
+        <div class="siteDescription">
+           Select a mood from the list below and write some notes to add an entry into the diary. You can view your progress via the tracker. 
+           You can submit one entry a day.
+
+        </div>
         <div id ="moodContainer">
             <input type="radio" id="vhappyMood" name="answer" value="1">
             <label for="vhappyMood" class="moodButtons button1"><img src="images/veryhappy.svg">Very happy</label>

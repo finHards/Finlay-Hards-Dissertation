@@ -32,14 +32,16 @@
         
         <div class="dropdowncontent" id="dropdown">
             <a href="profile.php">Profile</a>
+            <a href="diary.php">Diary</a>
             <a href="goals.php">Goals</a>
             <a href="tracker.php">Tracker</a>
+            <a href="supportInfo.php">Information</a>
             <a href="logout.php">log out</a>
         </div>
 
         <div class="siteDescription">
             <h2>Set a goal</h2>
-            Setting personal goals and working towards them has been shown to be beneficial for mental health.
+            Setting personal goals and working towards them has been shown to be beneficial for mental health. Select one from the options below.
             <select id="goalListDropdown">
                 <option>Go for a walk</option>
                 <option>Meditate</option>
@@ -67,7 +69,7 @@
                 <div>Progress</div>
             </div>
         </div>
-        <button class="mainButton" id="GoalSubmitButton" onclick="getGoals()">Update Goals</button>
+        <button class="mainButton" id="GoalSubmitButton" onclick="getGoals()">Update Table</button>
 
         <div id="errorbox2"></div>
 
