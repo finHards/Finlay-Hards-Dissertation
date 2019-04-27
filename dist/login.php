@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    //start a session, if a session is set already go to profile page so they dont have to re-enter their details
     if(isset($_SESSION['loginUser'])){
         header('Location: profile.php');
     }

@@ -1,5 +1,5 @@
 <?php
-    
+    //start a session for the user, if there is no session return to the login screen.
     session_start();
 
     if(!isset($_SESSION['loginUser'])){

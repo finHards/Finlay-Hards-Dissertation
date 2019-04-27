@@ -1,5 +1,5 @@
 <?php
-    
+    //start a session for the user, if there is no session return to the login screen.
     session_start();
 
     if(!isset($_SESSION['loginUser'])){
@@ -42,7 +42,7 @@
 
         
         
-
+        <!-- css grid setup for the calendar -->
         <div class="siteDescription" id="month"></div>
         <div id="calender">
             <div> Mon </div>
@@ -55,12 +55,13 @@
         </div>
         <div class="siteDescription" id="trackerInformation">
             <h2>Diary Notes</h2>
-            <!-- <p>Click a day to display your notes.</p> -->
+            
             <hr>
             <div id="moodValue">Click a day to display your notes.</div>
             <div id="moodFeelings"></div>
             <hr>
             <h3>Select Month<h3>
+            <!-- values start from 0 in javascript date function so have matched that here.  -->
             <div id="monthListContainer">
                 <select id="monthList">
                     <option value="0">January</option>
@@ -78,7 +79,7 @@
                 </select>
             </div>
         </div>
-            <button class="mainButton" onclick="updateButton()">Change Month</button>
+        <button class="mainButton" onclick="updateButton()">Change Month</button>
         
     </body>
 

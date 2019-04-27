@@ -31,7 +31,7 @@
                 <input type="password" id="txtPassword" placeholder="Enter Password" name="password" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Password'">
                 Confirm Password
                 <input type="password" id ="txtConfirmPassword" placeholder="Repeat Password" name="confirmPassword" class="inputBoxes" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder='Repeat Password'">
-
+                <!-- when you press the register button go to the register function in bundle.js -->
                 <button onclick="register()" type="submit" class="mainButton" id="registerButton">register</button>
 
                 <p>Already have an account? <a href="login.html">Sign In</a></p>

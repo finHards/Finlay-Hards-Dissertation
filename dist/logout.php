@@ -8,7 +8,7 @@ $_SESSION = array();
 //clear session from disk
 session_destroy();
     
-
+//return to home page
 header( "Location: index.html" );
 
 

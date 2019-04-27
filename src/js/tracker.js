@@ -124,6 +124,7 @@ window.populateCalendar = function(data, month){
             targetDiv.innerHTML = day;
             targetDiv.classList.add("button" + mood);
             targetDiv.addEventListener("click", popup);
+            testingText = atob(entry.text);
 
             switch (mood){
                 case '1':
@@ -159,7 +160,9 @@ window.populateCalendar = function(data, month){
             function popup(){
                 moodFeelings = document.getElementById("moodFeelings");
                 var breakLine = document.createElement("br");
-                moodFeelings.innerHTML = ("<b>Diary notes</b><br/>" + entry.text);
+            
+                // moodFeelings.innerHTML = ("<b>Diary notes</b><br/>" + entry.text);
+                moodFeelings.innerHTML = ("<b>Diary notes</b><br/>" + testingText);
                 moodValue = document.getElementById("moodValue");
                 moodValue.innerHTML = ("<b>Mood</b><br/>" + mood);
 

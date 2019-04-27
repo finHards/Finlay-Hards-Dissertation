@@ -1,10 +1,11 @@
 
 
-
+//function is defined in javascript by DOM using window. function as its all bundled together it would try run every function at once otherwise
 window.enterMood = function(){
-
+    
     event.preventDefault();
 
+    //setting an ajax request to be sent to diaryDAO
     var hr = new XMLHttpRequest();
 
     var url = "/includes/diaryDAO.php";

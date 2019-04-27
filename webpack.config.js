@@ -1,11 +1,11 @@
 const path = require('path');
 
 module.exports = {
-
+    //entry point for all my javascript and sass
     entry: './src/index.js',
 
     output: {
-
+        //once built using npx webpack sends the output to the dist folder as bundle.js
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
 
