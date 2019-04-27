@@ -4,8 +4,9 @@
     include "config.php";
 
     $email = $_SESSION['loginUser'];
+    $email_encoded = rtrim(strtr(base64_encode($email), '+/', '-_'), '=');
     
-    $sql="SELECT mood, dateUploaded, text FROM moods WHERE email='$email'";
+    $sql="SELECT mood, dateUploaded, text FROM moods WHERE email='$email_encoded'";
 
     $result = mysqli_query($connection, $sql);
     $rows = array();
