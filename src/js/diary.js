@@ -5,7 +5,7 @@ window.enterMood = function(){
     
     event.preventDefault();
 
-    //setting an ajax request to be sent to diaryDAO
+    //setting an ajax post request to be sent to diaryDAO.php, with the input text and mood selected attached.
     var hr = new XMLHttpRequest();
 
     var url = "/includes/diaryDAO.php";
@@ -15,6 +15,7 @@ window.enterMood = function(){
     hr.open("POST", url, true);
     hr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 
+    //when the ready state of the request is changed output the response into a div.
     hr.onreadystatechange = function(){
 
         var returnData = hr.responseText;
@@ -26,7 +27,7 @@ window.enterMood = function(){
         }
     }
 
-
+    //execute the post request
     hr.send(moodInfo);
 
 

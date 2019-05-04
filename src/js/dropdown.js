@@ -1,4 +1,4 @@
-
+//this code runs when the dropdown burger menu is clicked. it toggles the menu
 
 var dropDownMenu = document.getElementById('dropbutton');
 

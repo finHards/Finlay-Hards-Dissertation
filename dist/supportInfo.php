@@ -53,7 +53,7 @@
             <hr>
             <h4>Your data</h4>
             <p>
-                Once the trial period is over (May 1st/2nd), all data and information will be deleted. You will not recieve any spam emails. I will make a post via social media when this happens.
+                All your data is encoded, and passwords are hashed and cannot be read from the server. Once the trial period is over (May 1st/2nd), all data and information will be deleted. You will not recieve any spam emails. I will make a post via social media when this happens.
             </p>
             <hr>
             <h4>Support links</h4>
@@ -68,10 +68,9 @@
                 <a href="https://papyrus-uk.org/">Papyrus Uk</a><br><br>
                 
                 Text: 116 123 to get in touch with Samaritans if you are suffering from suicidal thoughts.
+                Your mental health is just as important as your physical health, please take care.
             </p>
         </div>
-
-
 
     </body>
 

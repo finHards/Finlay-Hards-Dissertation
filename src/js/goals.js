@@ -1,5 +1,6 @@
 
-
+//function that is ran when the submit button is pressed when a goal is selected
+//an ajax request that is sent to goalsDAO.php and uploads the selected goal to the database for that user
 window.uploadGoal = function(){
 
     event.preventDefault();
@@ -25,9 +26,11 @@ window.uploadGoal = function(){
     hr.send(data);
 
 }
-
+//function that gets the goals the user has previously set
+//this is ran on page load and also when update table is pressed
 window.getGoals = function(){
-
+    
+    //removes the current table and replaces it each time its updated
     let goalEntriesToRemove = document.getElementsByClassName("goalEntry");
 
     Array.from(goalEntriesToRemove).forEach((entry) => {
@@ -36,7 +39,7 @@ window.getGoals = function(){
 
 	})
 
-
+    //ajax request for the goal data
     var hr = new XMLHttpRequest();
     var url = "/includes/goalsDAO.php";
     
@@ -62,8 +65,10 @@ window.getGoals = function(){
 
 }
 
+//function that populates the goal table which is passed userdata from the getGoals function in JSON type
 window.populateGoalTable = function(userData){
-
+    //for each data entry point
+    //create a div for the goal and progress passed by the ajax request, and append that to the css grid to be displayed
     userData.forEach(function(entry){
         var id = entry.id;
         var goal = entry.goal;
@@ -79,13 +84,14 @@ window.populateGoalTable = function(userData){
         if(progress =="Complete"){
             divProgress.style.color = "#5CF640";
         }
-
+        //create a click event listener for the progress div
         divProgress.addEventListener("click", changeProgress);
 
         function changeProgress(){
-            //changes to complete
+            //changes to incomplete to complete and sets the colour of the text to green
             divProgress.innerHTML = "Complete";
             divProgress.style.color = "#5CF640";
+            //runs the update progress function by passing the id of the goal
             updateProgress(id);
 
             
@@ -93,7 +99,7 @@ window.populateGoalTable = function(userData){
     })
 
 }
-
+//updates the progress from incomplete to complete when pressed, using the id
 window.updateProgress = function(id){
 
     var hr = new XMLHttpRequest();
@@ -121,5 +127,5 @@ window.updateProgress = function(id){
 
 }
 
-
+//runs the getgoals function on load of the page
 getGoals();
