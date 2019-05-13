@@ -117,7 +117,14 @@ window.populateCalendar = function(data, month){
             var mood = entry.mood;
             let month = date.getMonth();
             let day = date.getDate();
-            let targetID = (day + "-" + (month + 1));
+
+            let year = date.getFullYear();
+            let startDate = new Date(year, month, 1);
+            startDatePosition = startDate.getDay();
+
+            //place the diary entry on the date
+            let targetID = (day + (startDatePosition - 1) + "-" + (month + 1));
+            
             console.log(targetID);
             let targetDiv = document.getElementById(targetID);
             targetDiv.innerHTML = day;
@@ -125,6 +132,7 @@ window.populateCalendar = function(data, month){
             //add an click event listener for diary entry days
             targetDiv.addEventListener("click", popup);
             testingText = atob(entry.text);
+            
             //change the mood from a number to relevant text
             switch (mood){
                 case '1':
